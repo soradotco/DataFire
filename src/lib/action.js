@@ -24,6 +24,7 @@ const Action = module.exports = function(opts) {
   this.title = opts.title || '';
   this.description = opts.description || '';
   this.outputSchema = opts.outputSchema || {};
+  this.outputExamples = opts.outputExamples || {};
   this.inputSchema = opts.inputSchema || {};
   this.inputs = opts.inputs || null;
   this.security = opts.security || {};
