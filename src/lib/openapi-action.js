@@ -43,6 +43,7 @@ const getActionFromOperation = module.exports = function(method, path, openapi, 
     description: op.description || op.summary,
     inputSchema: params.length ? inputSchema : {},
     outputSchema: outputSchema,
+    outputExamples: response.examples,
     security: actionSecurity,
     ajv: integration.ajv,
     handler: function(input, ctx) {
